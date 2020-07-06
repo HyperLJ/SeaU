@@ -1,0 +1,20 @@
+<!--pages/startup/startup.wxml-->
+<view class="startup">
+	<image src="/icons/background_startup.jpg" style="height:100%;width:100%;position:absolute;" mode='scaleToFill'></image>
+
+	<view class="startup-card">
+		<image src="/icons/logo.png" style="height:180rpx;width:180rpx"></image>
+
+		<text style="color: #aaa;">点击你的头像进入主页</text>
+
+		<view class="userinfo">
+			<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="userinfo-button"> 点击登录 </button>
+			<block wx:else>
+				<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+				<text>{{userInfo.nickName}}</text>
+
+			</block>
+		</view>
+	</view>
+
+</view>

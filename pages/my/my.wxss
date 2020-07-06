@@ -1,0 +1,63 @@
+/* pages/my/my.wxss */
+.my {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.my-content {
+  height: 80%;
+  width: 100%;
+  position: relative;
+}
+
+.my-content-image {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+}
+
+.my-card {
+  position: absolute;
+  width: 70%;
+  height: 30%;
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 10%;
+  top: 35%;
+  left: 5%;
+  padding: 15% 10% 15% 10%;
+  display: flex;
+  flex-direction: column
+}
+
+.my-avatar {
+  width: 192rpx;
+  height: 192rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.my-avatar-position {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.my-card-setting {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 100%;
+  border-radius: 40rpx;
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.my-button{
+  border-color: black;
+  background: rgb(255, 255, 255, 0.7);
+  border-width: 3rpx;
+  border-style: solid;
+  border-radius: 35rpx;
+  padding: 15rpx 70rpx;
+}

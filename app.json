@@ -1,0 +1,42 @@
+{
+  "pages":[
+    
+    "pages/startup/startup",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/control/control",
+    "pages/control/temperature/temperature"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "SeeU控制器",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#2A94FF",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/index.png",
+        "selectedIconPath": "icons/index_active.png"
+      },
+      {
+        "pagePath": "pages/control/control",
+        "text": "监控",
+        "iconPath": "icons/control.png",
+        "selectedIconPath": "icons/control_active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icons/my.png",
+        "selectedIconPath": "icons/my_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,33 @@
+<!--pages/control/control.wxml-->
+<view class="control">
+	<!-- 背景图片 -->
+	<image src="/icons/background_control.jpg" style="height:100%;width:100%;position:absolute;" mode='scaleToFill' />
+
+	<view class="control-content">
+		<view class="control-card" bindtap="jumpToTem">
+			<image src="/icons/tem.png" style="width:60rpx;height:60rpx"></image>
+			<text style="margin-left:20rpx">温度</text>
+			<!-- 用于填充剩余部分 -->
+			<view style="flex:1" />
+			<image src="/icons/next.png" style="width:50rpx;height:50rpx;padding:5rpx"></image>
+		</view>
+
+		<view class="control-card">
+			<image src="/icons/o2.png" style="width:60rpx;height:60rpx"></image>
+			<text style="margin-left:20rpx">氧气浓度</text>
+			<!-- 用于填充剩余部分 -->
+			<view style="flex:1" />
+			<image src="/icons/next.png" style="width:50rpx;height:50rpx;padding:5rpx"></image>
+		</view>
+
+		<view class="control-card">
+			<image src="/icons/ph2.png" style="width:60rpx;height:60rpx"></image>
+			<text style="margin-left:20rpx">酸碱度</text>
+			<!-- 用于填充剩余部分 -->
+			<view style="flex:1" />
+			<image src="/icons/next.png" style="width:50rpx;height:50rpx;padding:5rpx"></image>
+		</view>
+	</view>
+
+</view>
+<!-- wz wdd ne nbm df-->

@@ -1,0 +1,21 @@
+<!--pages/my/my.wxml-->
+<view class="my">
+	<image src="/icons/background_my.jpg" style="height:100%;width:100%;position:absolute;" mode='scaleToFill'></image>
+
+	<view class="my-content">
+		<!-- 卡片式布局 -->
+		<view class="my-card">
+			<!-- 昵称 -->
+			<text style="text-align:center;font-size:50rpx;">昵称</text>
+			<!-- 其他信息或者设置 -->
+			<view class="my-card-setting"></view>
+		</view>
+	</view>
+
+	<!-- 头像 -->
+	<view class="my-avatar-position">
+		<image class="my-avatar" src="../../icons/head.jpg" mode="cover"></image>
+	</view>
+
+	<button class="my-button" bindtap="exitLogin"> 退出登录 </button>
+</view>

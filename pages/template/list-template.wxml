@@ -1,0 +1,10 @@
+<template name="goodList">
+  <view class="card" >
+    <image src="{{image}}" class="image"/>
+
+    <view style="display:flex;flex-direction:column;margin-left:40rpx">
+      <text style="font-size:30rpx">{{name}}</text>
+      <text style="font-size:20rpx;color:gray;margin-top:10rpx">售价: ￥{{price}}元</text>
+    </view>
+  </view>
+</template>

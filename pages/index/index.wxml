@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<import src="/pages/template/list-template.wxml" />
+
+<view class="main">
+	<image src="/icons/background_home.jpg" style="height:100%;width:100%;position:absolute;" mode='scaleToFill'></image>
+
+	<scroll-view scroll-y="true" style="position:absolute;height:80%;top:20%">
+		<view class="main-content">
+		<!-- 鱼圈导读 -->
+		<text style="font-family='微软雅黑';font-size:30rpx">鱼圈导读</text>
+		<swiper indicator-dots="true" indicator-color="white" autoplay="true" style="margin:3%">
+			<swiper-item>
+				<image src="../../icons/image1.jpg" style="width:100%;height:100%;border-radius:20rpx" mode="scaleToFill"></image>
+			</swiper-item>
+			<swiper-item>
+				<image src="../../icons/image2.jpg" style="width:100%;height:100%;border-radius:20rpx" mode="scaleToFill"></image>
+			</swiper-item>
+		</swiper>
+
+		<!-- 用户指南 -->
+		<text style="font-family='微软雅黑';font-size:30rpx">用户指南</text>
+		<view class="main-card">
+			<view class="main-card-item">
+				<image src="/icons/question.png" style="width:50rpx;height:50rpx"></image>
+				<text style="font-size:20rpx;margin-top:10rpx">常见问题</text>
+			</view>
+			
+			<view class="main-card-item">
+				<image src="/icons/way.png" style="width:50rpx;height:50rpx"></image>
+				<text style="font-size:20rpx;margin-top:10rpx">解决方案</text>
+			</view>
+			
+			<view class="main-card-item">
+				<image src="/icons/service.png" style="width:50rpx;height:50rpx"></image>
+				<text style="font-size:20rpx;margin-top:10rpx">在线客服</text>
+			</view>
+		</view>
+
+		<!-- 新品推荐 -->
+		<text style="font-family='微软雅黑';font-size:30rpx">新品推荐</text>
+		<block wx:for="{{array}}" wx:key="index">
+			<template is="goodList" data="{{...item}}" />
+		</block>
+	</view>
+		
+	</scroll-view>
+</view>
+
