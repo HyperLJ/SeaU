@@ -1,5 +1,6 @@
-// pages/control/temperature/temperature.js
-const app = getApp()
+// pages/control/ph/ph.js
+
+const app=getApp();
 
 Page({
   back:function(){
@@ -14,10 +15,9 @@ Page({
    */
   data: {
     //获取全局变量 状态栏的top和bottom,用于将状态栏空出来
-    titleBarTop : app.globalData.titleBar.top,
-    titleBarBottom : app.globalData.titleBar.bottom
+    titleBarTop: app.globalData.titleBar.top,
+    titleBarBottom: app.globalData.titleBar.bottom
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -29,7 +29,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**

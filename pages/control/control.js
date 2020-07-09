@@ -3,9 +3,19 @@
 const app=getApp();
 
 Page({
-  jumpToTem:function(e){
+  jumpToTem:function(){
     wx.navigateTo({
-      url: 'temperature/temperature',
+      url: 'temperature/temperature'
+    })
+  },
+  jumpToOxy:function(){
+    wx.navigateTo({
+      url: 'oxygen/oxygen'
+    })
+  },
+  jumpToPH:function(){
+    wx.navigateTo({
+      url: 'ph/ph'
     })
   },
   /**

@@ -12,7 +12,7 @@
 			<image src="/icons/next.png" style="width:50rpx;height:50rpx;padding:5rpx"></image>
 		</view>
 
-		<view class="control-card">
+		<view class="control-card" bindtap="jumpToOxy">
 			<image src="/icons/o2.png" style="width:60rpx;height:60rpx"></image>
 			<text style="margin-left:20rpx">氧气浓度</text>
 			<!-- 用于填充剩余部分 -->
@@ -20,7 +20,7 @@
 			<image src="/icons/next.png" style="width:50rpx;height:50rpx;padding:5rpx"></image>
 		</view>
 
-		<view class="control-card">
+		<view class="control-card" bindtap="jumpToPH">
 			<image src="/icons/ph2.png" style="width:60rpx;height:60rpx"></image>
 			<text style="margin-left:20rpx">酸碱度</text>
 			<!-- 用于填充剩余部分 -->

@@ -1,9 +1,10 @@
 {
   "pages":[
-    
-    "pages/startup/startup",
-    "pages/index/index",
     "pages/my/my",
+    "pages/startup/startup",
+    "pages/control/ph/ph",
+    "pages/control/oxygen/oxygen",
+    "pages/index/index",
     "pages/control/control",
     "pages/control/temperature/temperature"
   ],

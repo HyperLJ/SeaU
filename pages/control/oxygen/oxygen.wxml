@@ -1,0 +1,40 @@
+<!--pages/control/oxygen/oxygen.wxml-->
+<view class="oxy">
+	<image src="/icons/background_c.jpg" style="height:100%;width:100%;position:absolute;" mode='scaleToFill'></image>
+	<!-- 顶部栏 -->
+	<view class="oxy-bar">
+		<!-- 将状态栏空出来 -->
+		<view style='height:{{titleBarTop}}px'></view>
+		<!-- 标题栏 -->
+		<view class="titleBar" style="height:{{titleBarBottom - titleBarTop}}px ">
+			<image src="/icons/back.png" style="padding: 10rpx;height:40rpx;width:40rpx" bindtap="back"></image>
+		</view>
+	</view>
+
+	<view class="oxy-content">
+		<!-- 氧气浓度圆盘 -->
+		<view class="oxy-disk">
+			<canvas class="oxy-disk-progress" canvas-id="canvas"></canvas>
+			<view class="oxy-disk-inner">
+				<text style="font-size:60rpx;font-family:'Candara Light'">26</text>
+				<text style="font-size:35rpx;">%</text>
+			</view>
+		</view>
+
+
+		<!-- 控制按钮 -->
+		<view class="oxy-content-button">
+			<view style="display:flex;flex-direction:column;">
+				<image src="/icons/O2down.png" style="height:100rpx;width:100rpx"></image>
+				<image src="/icons/time.png" style="height:100rpx;width:100rpx;margin-top:20rpx"></image>
+			</view>
+
+			<image src="/icons/trunon.png" style="height:130rpx;width:130rpx"></image>
+			
+			<view style="display:flex;flex-direction:column;">
+				<image src="/icons/O2up.png" style="height:100rpx;width:100rpx"></image>
+				<image src="/icons/auto.png" style="height:100rpx;width:100rpx;margin-top:20rpx"></image>
+			</view>
+		</view>
+	</view>
+</view>

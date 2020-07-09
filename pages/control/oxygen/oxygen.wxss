@@ -1,0 +1,64 @@
+/* pages/control/oxygen/oxygen.wxss */
+.oxy{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.oxy-bar{
+  position: absolute;
+  width: 100%;
+}
+
+.titleBar{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 50rpx;
+}
+
+.oxy-disk{
+  width: 500rpx;
+  height:500rpx;
+  border-radius: 50%;
+  background: rgb(255, 255, 255,0.8);
+  box-shadow: 0 0 30px 0 white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.oxy-disk-progress{
+  width: 400rpx;
+  height:400rpx;
+  position: absolute;
+}
+
+.oxy-disk-inner{
+  width: 300rpx;
+  height:300rpx;
+  border-radius: 50%;
+  background: rgb(152, 217, 255,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.oxy-content{
+  position: absolute;
+  width:100%;
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oxy-content-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin: 10%;
+}

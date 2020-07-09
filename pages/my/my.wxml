@@ -6,15 +6,27 @@
 		<!-- 卡片式布局 -->
 		<view class="my-card">
 			<!-- 昵称 -->
-			<text style="text-align:center;font-size:50rpx;">昵称</text>
+			<text style="text-align:center;font-size:45rpx;">{{userInfo.nickName}}</text>
 			<!-- 其他信息或者设置 -->
-			<view class="my-card-setting"></view>
+			<view class="my-card-setting">
+				<view style="display:flex;flex-direction:row">
+					<image src="/icons/bluetooth.png" style="height:45rpx;width:45rpx"></image>
+					<text style="margin-left:30rpx">蓝牙</text>
+					<view style="flex:1"/>
+					<switch style="zoom:0.7"></switch>
+				</view>
+
+				<view style="display:flex;flex-direction:row">
+					<image src="/icons/device.png" style="height:50rpx;width:50rpx;"></image>
+					<text style="margin-left:30rpx">我的设备</text>
+				</view>
+			</view>
 		</view>
 	</view>
 
 	<!-- 头像 -->
 	<view class="my-avatar-position">
-		<image class="my-avatar" src="../../icons/head.jpg" mode="cover"></image>
+		<image class="my-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
 	</view>
 
 	<button class="my-button" bindtap="exitLogin"> 退出登录 </button>
